@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunZone</title>
+    <link rel="icon" type="image/png" href="img/logo/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="path-to-your-favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-left">
+            <!-- GIF on the left corner with FunZone text -->
+            <img src="img\Animation - 1738132338229 (1).gif" alt="logo" class="header-gif-img-left" />
+            <h1 class="brand-name">FunZone</h1>
+        </div>
+        <div class="header-right">
+            <!-- Buttons for Spiner, and Contact -->
+            <a href="#" class="header-btn">Home</a>
+            <a href="#offers" class="header-btn" onclick="openSpinnerModal()">Fortune Spinner🍀</a>
+            <a href="#contact" class="header-btn">Contact</a>
+        </div>
+    </header>
+<!-- Main Product Card Section -->
+<h2 class="section-heading" style="margin-top: 60px;">CATEGORY</h2>
+<section class="product-card-section">
+    <div class="product-card">
+        <button class="slider-btn prev-btn" onclick="scrollSlider(-1)"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-btn next-btn" onclick="scrollSlider(1)"><i class="fas fa-chevron-right"></i></button>
+
+        <div class="category-slider">
+          <div class="category-item">
+                <button class="category-btn" onclick="window.location.href='#movies'">
+                    <img src="img/movie.jpg" alt="Movies" class="category-logo" />
+                    Movies
+                </button>
+            </div>
+            <div class="category-item">
+                <button class="category-btn" onclick="window.location.href='#news'">
+                    <img src="img/news.jpg" alt="News" class="category-logo" />
+                    News
+                </button>
+            </div>
+            <div class="category-item">
+                <button class="category-btn" onclick="window.location.href='#tvshows'">
+                    <img src="img/tvshow.jpg" alt="TV Shows" class="category-logo" />
+                    TV Shows
+                </button>
+            </div>            
+            <div class="category-item">
+                <button class="category-btn" onclick="window.location.href='#music'">
+                    <img src="img/music.jpg" alt="Music" class="category-logo" />
+                    Music
+                </button>
+            </div>
+            <div class="category-item">
+                <button class="category-btn" onclick="window.location.href='#sports'">
+                    <img src="img/sports.jpg" alt="Sports" class="category-logo" />
+                    Live Sports
+                </button>
+            </div>
+            <div class="category-item">
+                <button class="category-btn" onclick="window.location.href='#education'">
+                    <img src="img/edu.jpg" alt="Education" class="category-logo" />
+                    Education
+                </button>
+            </div>
+            <div class="category-item">
+                <button class="category-btn" onclick="window.location.href='#games'">
+                    <img src="img/game.jpg" alt="Games" class="category-logo" />
+                    Games
+                </button>
+            </div>
+            <div class="category-item">
+                <button class="category-btn" onclick="window.location.href='#cartoons'">
+                    <img src="img/cartoon.jpg" alt="Cartoon" class="category-logo" />
+                    Cartoons
+                </button>
+            </div>            
+         </div>
+       </div>  
+</section>
+<p class="category-description">Discover curated entertainment across movies, music, sports, news, education, and games — all in one place. FunZone brings India’s top streaming platforms together for a seamless and personalized experience....</p>
+
+<!-----Movie section-->
+
+<section id="movies">
+  <div class="movie-slider-wrapper">
+    <h2 class="section-heading" style="margin-top: 120px;">Top Movie Streaming Sites</h2>
+    <button class="movie-slider-btn movie-prev-btn" onclick="scrollMovieSlider(-1)"><i class="fas fa-chevron-left"></i></button>
+    <div class=" movie-slider">
+    <div class="site-card">
+      <img src="img/logo/netflix.jpg" alt="Netflix">
+      <h3>Netflix</h3>
+      <div class="star-rating">★★★★★ <span>5.0</span></div>
+      <p>Watch trending series, films, and award-winning originals in HD & 4K.</p>
+      <ul class="site-info-list">
+        <li>Languages: English, Hindi, Tamil</li>
+        <li>Plans: ₹149 to ₹649/month</li>
+        <li>Originals, Series, Documentaries</li>
+      </ul>
+      <a href="https://www.netflix.com" target="_blank">Explore Netflix</a>
+    </div>
+
+    <div class="site-card">
+      <img src="img/logo/disney.jpg" alt="Hotstar">
+      <h3>Disney+ Hotstar</h3>
+      <div class="star-rating">★★★★☆ <span>4.5</span></div>
+      <p>Bollywood blockbusters, live cricket, Marvel, and Disney content.</p>
+      <ul class="site-info-list">
+        <li>Free + Premium options</li>
+        <li>Live Sports & Indian TV Shows</li>
+        <li>Multiple language support</li>
+      </ul>
+      <a href="https://www.hotstar.com" target="_blank">Explore Hotstar</a>
+    </div>
+
+    <div class="site-card">
+      <img src="img/logo/amazon.jpg" alt="Prime Video">
+      <h3>Amazon Prime Video</h3>
+      <div class="star-rating">★★★★☆ <span>4.6</span></div>
+      <p>Exclusive series, Indian movies, and international blockbusters.</p>
+      <ul class="site-info-list">
+        <li>Free with Prime (₹1499/year)</li>
+        <li>Hindi, Tamil, Telugu, English</li>
+        <li>Offline downloads</li>
+      </ul>
+      <a href="https://www.primevideo.com" target="_blank">Explore Prime</a>
+    </div>
+
+    <div class="site-card">
+      <img src="img/logo/zee.jpg" alt="Zee5">
+      <h3>Zee5</h3>
+      <div class="star-rating">★★★☆☆ <span>3.9</span></div>
+      <p>Regional language movies and daily soaps with a vast content library.</p>
+      <ul class="site-info-list">
+        <li>Strong in Telugu, Tamil, Bengali</li>
+        <li>Live TV & Web Series</li>
+        <li>Starts at ₹599/year</li>
+      </ul>
+      <a href="https://www.zee5.com" target="_blank">Explore Zee5</a>
+    </div>
+
+    <div class="site-card">
+      <img src="img/logo/sony.jpg" alt="SonyLiv">
+      <h3>SonyLIV</h3>
+      <div class="star-rating">★★★☆☆ <span>3.8</span></div>
+      <p>Stream Sony Network shows, UEFA matches, and Hindi TV classics.</p>
+      <ul class="site-info-list">
+        <li>WWE, UEFA, Sony Originals</li>
+        <li>Free & Premium access</li>
+        <li>Good for sports fans</li>
+      </ul>
+      <a href="https://www.sonyliv.com" target="_blank">Explore SonyLIV</a>
+    </div>
+
+    <div class="site-card">
+        <img src="img/logo/sunnext.jpg" alt="Sun NXT" />
+        <h3>Sun NXT</h3>
+        <div class="star-rating">★★★★☆ <span>4.2</span></div>
+        <p>Tamil content with a vast selection of movies & TV shows .</p>
+        <ul class="site-info-list">
+          <li>Tamil Movies & TV</li>
+          <li>Exclusive Content</li>
+          <li>Sun Network Shows</li>
+        </ul>
+        <a href="https://www.sunnxt.com" target="_blank">Explore Sun NXT</a>
+    </div>
+    <button class="movie-slider-btn movie-next-btn" onclick="scrollMovieSlider(1)"><i class="fas fa-chevron-right"></i></button>
+  </div>
+</section>
+
+<!-- News Section -->
+<section id="news">
+  <div class="movie-slider-wrapper">
+    <h2 class="section-heading" style="margin-top: 120px;">Top Tamil News Channels</h2>
+    <button class="movie-slider-btn movie-prev-btn" onclick="scrollNewsSlider(-1)"><i class="fas fa-chevron-left"></i></button>
+    <div class="movie-slider" id="news-slider">
+      <div class="site-card">
+        <img src="img/logo/sunnews.jpg" alt="Sun News" />
+        <h3>Sun News</h3>
+        <div class="star-rating">★★★★☆ <span>4.5</span></div>
+        <p>Leading Tamil news channel with breaking news, live debates, and regional coverage.</p>
+        <ul class="site-info-list">
+          <li>24x7 Live TV</li>
+          <li>Breaking News</li>
+          <li>Mobile & Web</li>
+        </ul>
+        <a href="https://www.sunnewslive.in/" target="_blank">Explore Sun News</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/n18.jpg" alt="News18 Tamil Nadu" />
+        <h3>News18 Tamil Nadu</h3>
+        <div class="star-rating">★★★★☆ <span>4.4</span></div>
+        <p>Comprehensive Tamil news with live reports, current affairs, and investigative journalism.</p>
+        <ul class="site-info-list">
+          <li>Live TV & Updates</li>
+          <li>Tamil Language</li>
+          <li>Regional News</li>
+        </ul>
+        <a href="https://tamil.news18.com/" target="_blank">Explore News18 Tamil Nadu</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/polimer.jpg" alt="Polimer News" />
+        <h3>Polimer News</h3>
+        <div class="star-rating">★★★☆☆ <span>4.1</span></div>
+        <p>Popular Tamil news channel offering live news, politics, and social issues coverage.</p>
+        <ul class="site-info-list">
+          <li>Live Streaming</li>
+          <li>Regional Focus</li>
+          <li>Mobile Friendly</li>
+        </ul>
+        <a href="https://www.polimernews.com/" target="_blank">Explore Polimer News</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/thanthi.jpg" alt="Thanthi TV" />
+        <h3>Thanthi TV</h3>
+        <div class="star-rating">★★★★☆ <span>4.3</span></div>
+        <p>Trusted Tamil news channel known for live debates and detailed political coverage.</p>
+        <ul class="site-info-list">
+          <li>Live Debates</li>
+          <li>Breaking News</li>
+          <li>Mobile & Web</li>
+        </ul>
+        <a href="https://www.thanthitv.com/" target="_blank">Explore Thanthi TV</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/news7.jpg" alt="News7 Tamil" />
+        <h3>News7 Tamil</h3>
+        <div class="star-rating">★★★☆☆ <span>4.0</span></div>
+        <p>24-hour Tamil news channel offering live updates, entertainment, and more.</p>
+        <ul class="site-info-list">
+          <li>24x7 News</li>
+          <li>Tamil Coverage</li>
+          <li>Live Streaming</li>
+        </ul>
+        <a href="https://www.news7tamil.live/" target="_blank">Explore News7 Tamil</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/puthiya.jpg" alt="Puthiya Thalaimurai TV" />
+        <h3>Puthiya Thalaimurai TV</h3>
+        <div class="star-rating">★★★★☆ <span>4.2</span></div>
+        <p>Popular Tamil news channel focusing on current affairs, debates, and social issues.</p>
+        <ul class="site-info-list">
+          <li>Current Affairs</li>
+          <li>Investigative Journalism</li>
+          <li>Mobile & Web</li>
+        </ul>
+        <a href="https://www.puthiyathalaimurai.com/" target="_blank">Explore Puthiya Thalaimurai TV</a>
+      </div>
+   </div>
+   <button class="movie-slider-btn movie-next-btn" onclick="scrollNewsSlider(1)"><i class="fas fa-chevron-right"></i></button>
+  </div>
+</section>
+<!------TV show------------->
+<section id="tvshows">
+  <div class="movie-slider-wrapper">
+    <h2 class="section-heading" style="margin-top: 120px;">Top Tamil TV Shows & Channels</h2>
+
+    <button class="movie-slider-btn movie-prev-btn" onclick="scrollTVShowsSlider(-1)">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+
+    <div class="movie-slider" id="tvshows-slider">
+
+      <div class="site-card">
+        <img src="img/logo/suntv.jpg" alt="Sun TV" />
+        <h3>Sun TV</h3>
+        <div class="star-rating">★★★★★ <span>4.7</span></div>
+        <p>A long-standing leader in Tamil entertainment, offering a wide array of serials, reality shows, and movies.</p>
+        <ul class="site-info-list">
+          <li>Popular Serials</li>
+          <li>Reality Shows</li>
+          <li>Movies & Specials</li>
+        </ul>
+        <a href="https://www.suntvnetwork.in" target="_blank">Explore Sun TV</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/sv.jpg" alt="Star Vijay" />
+        <h3>Star Vijay</h3>
+        <div class="star-rating">★★★★☆ <span>4.5</span></div>
+        <p>Known for popular reality shows like "Bigg Boss Tamil" and various serials, a major Tamil entertainment channel.</p>
+        <ul class="site-info-list">
+          <li>Bigg Boss Tamil</li>
+          <li>Popular Serials</li>
+          <li>Reality Shows</li>
+        </ul>
+        <a href="https://www.startv.com/channel/star-vijay/" target="_blank">Explore Star Vijay</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/zeetamil.jpg" alt="Zee Tamil" />
+        <h3>Zee Tamil</h3>
+        <div class="star-rating">★★★★☆ <span>4.4</span></div>
+        <p>Prominent general entertainment channel in Tamil Nadu, offering a diverse range of content.</p>
+        <ul class="site-info-list">
+          <li>Serials & Shows</li>
+          <li>Reality Programs</li>
+          <li>Movies & Specials</li>
+        </ul>
+        <a href="https://www.zee5.com/channels/details/zee-tamil/0-9-zeetamil" target="_blank">Explore Zee Tamil</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/colors.jpg" alt="Colors Tamil" />
+        <h3>Colors Tamil</h3>
+        <div class="star-rating">★★★★☆ <span>4.3</span></div>
+        <p>Part of JioStar, providing a variety of entertainment programs and serials to Tamil audiences.</p>
+        <ul class="site-info-list">
+          <li>Serials & Reality Shows</li>
+          <li>Special Events</li>
+          <li>Movies</li>
+        </ul>
+        <a href="https://www.colorstv.com/in/colors-tamil/" target="_blank">Explore Colors Tamil</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/sunnext.jpg" alt="Sun NXT" />
+        <h3>Sun NXT</h3>
+        <div class="star-rating">★★★★☆ <span>4.5</span></div>
+        <p>Leading OTT platform for Tamil content, offering a vast library of TV shows and movies.</p>
+        <ul class="site-info-list">
+          <li>TV Shows & Serials</li>
+          <li>Movies & Specials</li>
+          <li>Exclusive Content</li>
+        </ul>
+        <a href="https://www.sunnxt.com" target="_blank">Explore Sun NXT</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/aha.jpg" alt="Aha Tamil" />
+        <h3>Aha Tamil</h3>
+        <div class="star-rating">★★★★☆ <span>4.2</span></div>
+        <p>OTT platform focusing on Tamil original series, movies, and exclusive shows.</p>
+        <ul class="site-info-list">
+          <li>Tamil Originals</li>
+          <li>Movies & Series</li>
+          <li>Exclusive Content</li>
+        </ul>
+        <a href="https://www.aha.video/tamil" target="_blank">Explore Aha Tamil</a>
+      </div>
+
+    </div>
+
+    <button class="movie-slider-btn movie-next-btn" onclick="scrollTVShowsSlider(1)"><i class="fas fa-chevron-right"></i></button>
+  </div>
+</section>
+<!-------Music -------->
+<section id="music">
+  <div class="movie-slider-wrapper">
+    <h2 class="section-heading" style="margin-top: 120px;">Top Indian Music Platforms</h2>
+    <button class="movie-slider-btn movie-prev-btn" onclick="scrollMusicSlider(-1)"><i class="fas fa-chevron-left"></i></button>
+    <div class="movie-slider" id="music-slider">
+
+      <div class="site-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify India" />
+        <h3>Spotify India</h3>
+        <div class="star-rating">★★★★★ <span>4.7</span></div>
+        <p>Global music streaming service with huge Indian & international song libraries.</p>
+        <ul class="site-info-list">
+          <li>Playlists & Podcasts</li>
+          <li>Personalized Recommendations</li>
+          <li>Free & Premium Plans</li>
+        </ul>
+        <a href="https://www.spotify.com/in/" target="_blank">Explore Spotify India</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/gaana.jpg" alt="Gaana" />
+        <h3>Gaana</h3>
+        <div class="star-rating">★★★★☆ <span>4.5</span></div>
+        <p>Popular Indian music streaming app with vast regional language collections.</p>
+        <ul class="site-info-list">
+          <li>Hindi & Regional Songs</li>
+          <li>Radio & Podcasts</li>
+          <li>Offline Downloads</li>
+        </ul>
+        <a href="https://gaana.com/" target="_blank">Explore Gaana</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/jiosaavn.jpg" alt="JioSaavn" />
+        <h3>JioSaavn</h3>
+        <div class="star-rating">★★★★☆ <span>4.4</span></div>
+        <p>Leading Indian music streaming platform with Bollywood and international hits.</p>
+        <ul class="site-info-list">
+          <li>Curated Playlists</li>
+          <li>Live Radio</li>
+          <li>Ad-free Premium</li>
+        </ul>
+        <a href="https://www.jiosaavn.com/" target="_blank">Explore JioSaavn</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/wynk.jpg" alt="Wynk Music" />
+        <h3>Wynk Music</h3>
+        <div class="star-rating">★★★★☆ <span>4.3</span></div>
+        <p>Music streaming service by Airtel with a large catalog of Indian and international songs.</p>
+        <ul class="site-info-list">
+          <li>High-Quality Audio</li>
+          <li>Personalized Mixes</li>
+          <li>Offline Mode</li>
+        </ul>
+        <a href="https://wynk.in/music" target="_blank">Explore Wynk Music</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/applemusic.jpg" alt="Apple Music India" />
+        <h3>Apple Music India</h3>
+        <div class="star-rating">★★★★☆ <span>4.2</span></div>
+        <p>Apple’s premium music streaming service with curated playlists and exclusive releases.</p>
+        <ul class="site-info-list">
+          <li>Lossless Audio</li>
+          <li>Exclusive Content</li>
+          <li>Integrated with iOS</li>
+        </ul>
+        <a href="https://music.apple.com/in" target="_blank">Explore Apple Music India</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/apm.jpg" alt="Amazon Music India" />
+        <h3>Amazon Music India</h3>
+        <div class="star-rating">★★★★☆ <span>4.1</span></div>
+        <p>Amazon’s music streaming platform with millions of songs and podcasts.</p>
+        <ul class="site-info-list">
+          <li>Alexa Integration</li>
+          <li>Curated Playlists</li>
+          <li>Offline Listening</li>
+        </ul>
+        <a href="https://music.amazon.in/" target="_blank">Explore Amazon Music India</a>
+      </div>
+    </div>
+    <button class="movie-slider-btn movie-next-btn" onclick="scrollMusicSlider(1)"><i class="fas fa-chevron-right"></i></button>
+  </div>
+</section>
+
+<!------------------Sports-------------->
+<section id="sports">
+  <div class="movie-slider-wrapper">
+    <h2 class="section-heading" style="margin-top: 120px;">Top Live Sports Channels</h2>
+
+    <button class="movie-slider-btn movie-prev-btn" onclick="scrollSportsSlider(-1)">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+
+    <div class="movie-slider" id="sports-slider">
+
+      <div class="site-card">
+        <img src="img/logo/ss1.jpg" alt="Star Sports 1 Tamil" />
+        <h3>Star Sports 1 Tamil</h3>
+        <div class="star-rating">★★★★☆ <span>4.6</span></div>
+        <p>Live Tamil sports channel focusing on cricket and other major sports events.</p>
+        <ul class="site-info-list">
+          <li>Cricket & Football</li>
+          <li>Live Match Coverage</li>
+          <li>Regional Commentary</li>
+        </ul>
+        <a href="https://www.starsports.com" target="_blank">Explore Star Sports 1 Tamil</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/ss2.jpg" alt="Star Sports 2" />
+        <h3>Star Sports 2</h3>
+        <div class="star-rating">★★★★☆ <span>4.5</span></div>
+        <p>Popular sports channel broadcasting live cricket, football, kabaddi, and more.</p>
+        <ul class="site-info-list">
+          <li>IPL & International Cricket</li>
+          <li>Football Leagues</li>
+          <li>Live Streaming</li>
+        </ul>
+        <a href="https://www.starsports.com" target="_blank">Explore Star Sports 2</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/ss3.jpg" alt="Star Sports 3" />
+        <h3>Star Sports 3</h3>
+        <div class="star-rating">★★★★☆ <span>4.4</span></div>
+        <p>Sports channel featuring a mix of live sports, highlights, and expert analysis.</p>
+        <ul class="site-info-list">
+          <li>Multi-sport Coverage</li>
+          <li>Expert Commentary</li>
+          <li>Highlights & Replays</li>
+        </ul>
+        <a href="https://www.starsports.com" target="_blank">Explore Star Sports 3</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/dd.jpg" alt="DD Sports" />
+        <h3>DD Sports</h3>
+        <div class="star-rating">★★★☆☆ <span>3.9</span></div>
+        <p>India’s national sports channel airing a wide range of domestic and international events.</p>
+        <ul class="site-info-list">
+          <li>National Sports Events</li>
+          <li>Live Coverage</li>
+          <li>Sports News & Updates</li>
+        </ul>
+        <a href="https://doordarshan.gov.in/dd-sports" target="_blank">Explore DD Sports</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/sonysix.jpg" alt="Sony Six" />
+        <h3>Sony Six</h3>
+        <div class="star-rating">★★★★☆ <span>4.3</span></div>
+        <p>Leading channel for international cricket, WWE, and other major sports coverage.</p>
+        <ul class="site-info-list">
+          <li>Cricket & WWE</li>
+          <li>Football & Tennis</li>
+          <li>Live Sports & Highlights</li>
+        </ul>
+        <a href="https://www.sonyliv.com/channel/sony-six-1000000019" target="_blank">Explore Sony Six</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/sony10.jpg" alt="Sony Ten 1" />
+        <h3>Sony Ten 1</h3>
+        <div class="star-rating">★★★★☆ <span>4.2</span></div>
+        <p>Premier channel for international cricket and multi-sport events.</p>
+        <ul class="site-info-list">
+          <li>International Cricket</li>
+          <li>Football Leagues</li>
+          <li>Live Coverage</li>
+        </ul>
+        <a href="https://www.sonyliv.com/channel/sony-ten-1-1000000017" target="_blank">Explore Sony Ten 1</a>
+      </div>
+
+    <button class="movie-slider-btn movie-next-btn" onclick="scrollSportsSlider(1)"><i class="fas fa-chevron-right"></i></button>
+  </div>
+</section>
+<!------------------Education-------------->
+<section id="education">
+  <div class="movie-slider-wrapper">
+    <h2 class="section-heading" style="margin-top: 120px;">Top Education Platforms</h2><button class="movie-slider-btn movie-prev-btn" onclick="scrollEducationSlider(-1)"><i class="fas fa-chevron-left"></i></button>
+
+    <div class="movie-slider" id="education-slider">
+
+      <div class="site-card">
+        <img src="img/logo/khan.jpg" alt="Khan Academy" />
+        <h3>Khan Academy</h3>
+        <div class="star-rating">★★★★★ <span>4.8</span></div>
+        <p>A globally recognized platform offering free online courses, lessons, and practice exercises.</p>
+        <ul class="site-info-list">
+          <li>Free Content</li>
+          <li>Interactive Exercises</li>
+          <li>Wide Subject Coverage</li>
+        </ul>
+        <a href="https://www.khanacademy.org" target="_blank">Explore Khan Academy</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/coursera.jpg" alt="Coursera" />
+        <h3>Coursera</h3>
+        <div class="star-rating">★★★★☆ <span>4.5</span></div>
+        <p>Provides college-level courses, specializations, and degrees from top universities worldwide.</p>
+        <ul class="site-info-list">
+          <li>University Courses</li>
+          <li>Professional Certificates</li>
+          <li>Flexible Learning</li>
+        </ul>
+        <a href="https://www.coursera.org" target="_blank">Explore Coursera</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/shiksha.jpg" alt="Shiksha.com" />
+        <h3>Shiksha.com</h3>
+        <div class="star-rating">★★★★☆ <span>4.3</span></div>
+        <p>Popular Indian platform for education portals, college admissions, and career guidance.</p>
+        <ul class="site-info-list">
+          <li>College Admissions</li>
+          <li>Career Guidance</li>
+          <li>Scholarship Info</li>
+        </ul>
+        <a href="https://www.shiksha.com" target="_blank">Explore Shiksha.com</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/edx.jpg" alt="EdX" />
+        <h3>EdX</h3>
+        <div class="star-rating">★★★★☆ <span>4.4</span></div>
+        <p>Leading MOOC provider offering courses from prestigious universities like Harvard and MIT.</p>
+        <ul class="site-info-list">
+          <li>University Courses</li>
+          <li>Professional Certificates</li>
+          <li>Online Degrees</li>
+        </ul>
+        <a href="https://www.edx.org" target="_blank">Explore EdX</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/byjus.jpg" alt="Byju's" />
+        <h3>Byju's</h3>
+        <div class="star-rating">★★★★☆ <span>4.5</span></div>
+        <p>Indian ed-tech company with comprehensive learning programs for K-12 and competitive exams.</p>
+        <ul class="site-info-list">
+          <li>Interactive Videos</li>
+          <li>Exam Preparation</li>
+          <li>Personalized Learning</li>
+        </ul>
+        <a href="https://byjus.com" target="_blank">Explore Byju's</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/gl.jpg" alt="Great Learning" />
+        <h3>Great Learning</h3>
+        <div class="star-rating">★★★★☆ <span>4.2</span></div>
+        <p>Online platform offering professional courses and certification programs in tech and management.</p>
+        <ul class="site-info-list">
+          <li>Professional Courses</li>
+          <li>Certification</li>
+          <li>Industry-Relevant</li>
+        </ul>
+        <a href="https://www.greatlearning.in" target="_blank">Explore Great Learning</a>
+      </div>
+    </div>
+
+    <button class="movie-slider-btn movie-next-btn" onclick="scrollEducationSlider(1)"><i class="fas fa-chevron-right"></i></button>
+  </div>
+</section>
+<!----------------Games--------------------->
+<section id="games">
+  <div class="movie-slider-wrapper">
+    <h2 class="section-heading" style="margin-top: 120px;">Top Games Websites</h2>
+
+    <button class="movie-slider-btn movie-prev-btn" onclick="scrollGamesSlider(-1)">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+
+    <div class="movie-slider" id="games-slider">
+
+      <div class="site-card">
+        <img src="img/logo/poki.jpg" alt="Poki.com" />
+        <h3>Poki.com</h3>
+        <div class="star-rating">★★★★☆ <span>4.5</span></div>
+        <p>Offers a wide variety of browser-based games across various categories.</p>
+        <ul class="site-info-list">
+          <li>Free Online Games</li>
+          <li>Multiple Genres</li>
+          <li>Easy Browser Access</li>
+        </ul>
+        <a href="https://poki.com" target="_blank">Explore Poki.com</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/roblox.jpg" alt="Roblox.com" />
+        <h3>Roblox.com</h3>
+        <div class="star-rating">★★★★☆ <span>4.4</span></div>
+        <p>A platform for user-created games and experiences with a massive global community, including India.</p>
+        <ul class="site-info-list">
+          <li>User-Created Games</li>
+          <li>Social Interaction</li>
+          <li>Massive Community</li>
+        </ul>
+        <a href="https://roblox.com" target="_blank">Explore Roblox.com</a>
+      </div>
+
+      <div class="site-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg" alt="SteamPowered.com" />
+        <h3>SteamPowered.com</h3>
+        <div class="star-rating">★★★★★ <span>4.7</span></div>
+        <p>Popular platform for PC game distribution and online multiplayer gaming.</p>
+        <ul class="site-info-list">
+          <li>PC Game Store</li>
+          <li>Multiplayer Gaming</li>
+          <li>Community Features</li>
+        </ul>
+        <a href="https://steampowered.com" target="_blank">Explore SteamPowered.com</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/crazygames.jpg" alt="CrazyGames.com" />
+        <h3>CrazyGames.com</h3>
+        <div class="star-rating">★★★★☆ <span>4.3</span></div>
+        <p>Known for its extensive collection of free online games, including many popular titles.</p>
+        <ul class="site-info-list">
+          <li>Free Online Games</li>
+          <li>Multiple Genres</li>
+          <li>Regular Updates</li>
+        </ul>
+        <a href="https://crazygames.com" target="_blank">Explore CrazyGames.com</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/d11.jpg" alt="Dream11.com" />
+        <h3>Dream11.com</h3>
+        <div class="star-rating">★★★★☆ <span>4.4</span></div>
+        <p>Prominent fantasy sports platform popular in India, including Tamil Nadu.</p>
+        <ul class="site-info-list">
+          <li>Fantasy Cricket</li>
+          <li>Sports Leagues</li>
+          <li>Live Updates</li>
+        </ul>
+        <a href="https://dream11.com" target="_blank">Explore Dream11.com</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/rummy.jpg" alt="Khelplayrummy.com" />
+        <h3>Khelplayrummy.com</h3>
+        <div class="star-rating">★★★★☆ <span>4.2</span></div>
+        <p>Popular online rummy platform offering engaging card games.</p>
+        <ul class="site-info-list">
+          <li>Online Rummy</li>
+          <li>Tournaments & Cash Games</li>
+          <li>User Friendly</li>
+        </ul>
+        <a href="https://khelplayrummy.com" target="_blank">Explore Khelplayrummy.com</a>
+      </div>
+
+    </div>
+
+    <button class="movie-slider-btn movie-next-btn" onclick="scrollGamesSlider(1)">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+</section>
+<!----------------Cartoon Channel ------->
+<!-- Cartoon Channels Section -->
+<section id="cartoons">
+  <div class="movie-slider-wrapper">
+    <h2 class="section-heading" style="margin-top: 120px;">Top Cartoon TV Channels</h2>
+    <button class="movie-slider-btn movie-prev-btn" onclick="scrollCartoonSlider(-1)"><i class="fas fa-chevron-left"></i></button>
+    <div class="movie-slider" id="cartoon-slider">
+      <div class="site-card">
+        <img src="img/logo/disney.jpg" alt="Disney Channel">
+        <h3>Disney Channel</h3>
+        <div class="star-rating">★★★★★ <span>5.0</span></div>
+        <p>Enjoy iconic shows like Doraemon, Shinchan, and original Disney animations.</p>
+        <ul class="site-info-list">
+          <li>Age Group: 4-14 yrs</li>
+          <li>HD Animation Shows</li>
+          <li>Global Reach</li>
+        </ul>
+        <a href="https://www.disney.in/tv/disney-channel" target="_blank">Watch Disney</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/nick.jpg" alt="Nickelodeon">
+        <h3>Nickelodeon</h3>
+        <div class="star-rating">★★★★☆ <span>4.6</span></div>
+        <p>Home of Motu Patlu, Ninja Hattori, SpongeBob, and more.</p>
+        <ul class="site-info-list">
+          <li>Hindi Dubbing</li>
+          <li>Desi Characters + Global Icons</li>
+          <li>Action Comedy</li>
+        </ul>
+        <a href="https://www.nickindia.com" target="_blank">Watch Nick</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/cn.jpg" alt="Cartoon Network">
+        <h3>Cartoon Network</h3>
+        <div class="star-rating">★★★★☆ <span>4.4</span></div>
+        <p>Watch classics like Tom & Jerry, Ben 10, Powerpuff Girls, and more.</p>
+        <ul class="site-info-list">
+          <li>Classic & New Cartoons</li>
+          <li>Wide Age Appeal</li>
+          <li>24x7 Fun</li>
+        </ul>
+        <a href="https://www.cartoonnetworkindia.com" target="_blank">Watch CN</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/pogo.jpg" alt="Pogo">
+        <h3>Pogo</h3>
+        <div class="star-rating">★★★☆☆ <span>4.0</span></div>
+        <p>Watch Chhota Bheem, Mighty Raju and other Indian favorites.</p>
+        <ul class="site-info-list">
+          <li>Indian Animation</li>
+          <li>Simple Stories</li>
+          <li>Safe for Little Kids</li>
+        </ul>
+        <a href="https://www.pogo.tv" target="_blank">Watch Pogo</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/hungama.jpg" alt="Hungama TV">
+        <h3>Hungama TV</h3>
+        <div class="star-rating">★★★★☆ <span>4.3</span></div>
+        <p>Watch Shinchan, Kiteretsu, and fun anime-based content.</p>
+        <ul class="site-info-list">
+          <li>Japanese Anime (Hindi Dub)</li>
+          <li>Popular Among Teens</li>
+          <li>Comedy & Action</li>
+        </ul>
+        <a href="https://www.hungama.com/tv-shows/" target="_blank">Watch Hungama</a>
+      </div>
+
+      <div class="site-card">
+        <img src="img/logo/sonyyay.jpg" alt="Sony YAY!">
+        <h3>Sony YAY!</h3>
+        <div class="star-rating">★★★☆☆ <span>3.9</span></div>
+        <p>New-age cartoons like Paap-O-Meter and Honey Bunny Ka Jholmaal.</p>
+        <ul class="site-info-list">
+          <li>Indian Originals</li>
+          <li>Fresh Themes</li>
+          <li>Young Audiences</li>
+        </ul>
+        <a href="https://www.sonyyay.com" target="_blank">Watch Sony YAY!</a>
+      </div>
+    </div>
+    <button class="movie-slider-btn movie-next-btn" onclick="scrollCartoonSlider(1)"><i class="fas fa-chevron-right"></i></button>
+  </div>
+</section>
+
+
+<!---------Contact--------------->
+<section class="contact-section" id="contact">
+  <h2 class="contact-heading">Get In Touch</h2>
+  <p class="contact-subtext">Let's connect! I'm open to discussions, projects, or just a friendly hello 😊</p>
+
+  <form class="contact-form">
+    <div class="input-group">
+      <input type="text" name="name" required />
+      <label>Name</label>
+    </div>
+    <div class="input-group">
+      <input type="email" name="email" required />
+      <label>Email</label>
+    </div>
+    <div class="input-group">
+      <textarea name="message" rows="4" required></textarea>
+      <label>Message</label>
+    </div>
+    <button type="submit" class="contact-btn">Send Message</button>
+  </form>
+
+  <div class="contact-socials">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fas fa-envelope"></i></a>
+  </div>
+</section>
+
+
+
+
+<!-- Spinner Modal -->
+<div id="spinnerModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeSpinnerModal()">&times;</span>
+    <h2>🎉 Emoji Fortune Spinner 🎉</h2>
+
+    <div class="wheel-container">
+      <div class="pointer"></div>
+      <div class="wheel" id="wheel"></div>
+      <div id="centerEmoji" class="center-emoji" style="display: none;"></div>
+    </div>
+
+    <button class="spin-btn" onclick="spin()">Spin the Wheel</button>
+    <div class="result" id="result"></div>
+  </div>
+</div>
+
+<script>
+  const emojis = ['😄','😎','🥳','🤑','😇','😍','🤩','🤗','🤠','🔮','❤️‍🔥','🌟'];
+  const fortunes = [
+  "📬 A surprise message will brighten your day!",
+  "🎯 A golden opportunity is on the horizon!",
+  "🌈 Joy, love, and laughter are destined for you!",
+  "💰 Unexpected wealth is coming your way!",
+  "💌 Someone is secretly thinking of you with love!",
+  "🎉 A happy twist of fate awaits you today!",
+  "✈️ An unforgettable journey is just around the corner!",
+  "😊 Your smile will light up someone’s world today!",
+  "🔍 Something long lost will find its way back to you!",
+  "🍀 Luck is dancing in your favor right now!",
+  "🏆 Your hard work will soon make someone incredibly proud!",
+  "🌌 The universe is aligning just for you tonight!"
+  ];
+
+  const wheel = document.getElementById("wheel");
+  const result = document.getElementById("result");
+  const centerEmoji = document.getElementById("centerEmoji");
+  let anglePerEmoji = 360 / emojis.length;
+  let spinAngle = 0;
+
+  function renderEmojis() {
+    if (!wheel) return;
+    wheel.innerHTML = '';
+    emojis.forEach((emoji, i) => {
+      const angle = i * anglePerEmoji;
+      const el = document.createElement('div');
+      el.classList.add('emoji');
+      el.innerText = emoji;
+      const radius = 140;
+      const x = radius * Math.cos((angle - 90) * Math.PI / 180);
+      const y = radius * Math.sin((angle - 90) * Math.PI / 180);
+      el.style.left = `${175 + x}px`;
+      el.style.top = `${175 + y}px`;
+      el.style.transform = `translate(-50%, -50%) rotate(${angle}deg)`;
+      wheel.appendChild(el);
+    });
+  }
+
+  function spin() {
+    centerEmoji.style.display = "none";
+    result.innerHTML = "";
+
+    const randomIndex = Math.floor(Math.random() * emojis.length);
+    const degreesToSpin = 360 * 5 + (360 - (randomIndex * anglePerEmoji) - anglePerEmoji / 2);
+    spinAngle += degreesToSpin;
+    wheel.style.transform = `rotate(${spinAngle}deg)`;
+
+    setTimeout(() => {
+      const chosenEmoji = emojis[randomIndex];
+      const chosenFortune = fortunes[randomIndex];
+
+      centerEmoji.innerText = chosenEmoji;
+      centerEmoji.style.display = "block";
+      result.innerHTML = `<p>${chosenFortune}</p>`;
+    }, 4000);
+  }
+
+  function openSpinnerModal() {
+    document.getElementById("spinnerModal").style.display = "block";
+    renderEmojis(); // ensure emojis render when modal opens
+  }
+
+  function closeSpinnerModal() {
+    document.getElementById("spinnerModal").style.display = "none";
+    result.innerHTML = "";
+    centerEmoji.style.display = "none";
+  }
+</script>
+
+<!-- Footer Section -->
+<footer>
+   <p>&copy; 2025 FunZone. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
